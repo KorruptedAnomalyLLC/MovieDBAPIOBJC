@@ -13,6 +13,7 @@
 		0C19C0A72298802700FCE9E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C0A52298802700FCE9E4 /* LaunchScreen.storyboard */; };
 		0C19C0AA2298802700FCE9E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C0A92298802700FCE9E4 /* main.m */; };
 		0C19C0B4229880A000FCE9E4 /* AJWMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C0B3229880A000FCE9E4 /* AJWMovie.m */; };
+		0C19C0B822988D5400FCE9E4 /* AJWMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C0B722988D5400FCE9E4 /* AJWMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0C19C0A92298802700FCE9E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C19C0B2229880A000FCE9E4 /* AJWMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJWMovie.h; sourceTree = "<group>"; };
 		0C19C0B3229880A000FCE9E4 /* AJWMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJWMovie.m; sourceTree = "<group>"; };
+		0C19C0B622988D5400FCE9E4 /* AJWMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJWMovieController.h; sourceTree = "<group>"; };
+		0C19C0B722988D5400FCE9E4 /* AJWMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJWMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 				0C19C0B02298803600FCE9E4 /* Resources */,
 				0C19C0B12298804F00FCE9E4 /* Storyboards */,
 				0C19C0B5229880A600FCE9E4 /* Models */,
+				0C19C0B922988D6000FCE9E4 /* ModelController */,
 			);
 			path = MovieDataBaseOBJC;
 			sourceTree = "<group>";
@@ -93,6 +97,15 @@
 				0C19C0B3229880A000FCE9E4 /* AJWMovie.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0C19C0B922988D6000FCE9E4 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C0B622988D5400FCE9E4 /* AJWMovieController.h */,
+				0C19C0B722988D5400FCE9E4 /* AJWMovieController.m */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C19C0AA2298802700FCE9E4 /* main.m in Sources */,
+				0C19C0B822988D5400FCE9E4 /* AJWMovieController.m in Sources */,
 				0C19C09C2298802600FCE9E4 /* AppDelegate.m in Sources */,
 				0C19C0B4229880A000FCE9E4 /* AJWMovie.m in Sources */,
 			);

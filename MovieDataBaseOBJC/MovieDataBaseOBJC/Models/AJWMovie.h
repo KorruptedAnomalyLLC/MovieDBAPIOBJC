@@ -15,14 +15,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,  copy, readonly) NSString *movieTitle;
 @property (nonatomic, copy, readonly) NSString *movieDescription;
 @property (nonatomic, copy, readonly) NSString *posterPath;
-@property (nonatomic, readonly, nullable) NSMumber *votes;
+@property (nonatomic, readonly, nullable) NSNumber *votes;
 @property (nonatomic, copy, readonly, nullable) NSNumber *rating;
 
 -(instancetype) initWithTitle:(NSString *)title movieDescription:(NSString *)movieDescription posterPath:(NSString *)posterPath votes:(NSNumber *)votes rating:(NSNumber *)rating;
 
 @end
 
-@interface DHKMovie (JSONConvertable)
+@interface AJWMovie (JSONConvertable)
 
 -(instancetype) initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
