@@ -12,6 +12,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AJWMovie : NSObject
 
+@property (nonatomic,  copy, readonly) NSString *movieTitle;
+@property (nonatomic, copy, readonly) NSString *movieDescription;
+@property (nonatomic, copy, readonly) NSString *posterPath;
+@property (nonatomic, readonly, nullable) NSMumber *votes;
+@property (nonatomic, copy, readonly, nullable) NSNumber *rating;
+
+-(instancetype) initWithTitle:(NSString *)title movieDescription:(NSString *)movieDescription posterPath:(NSString *)posterPath votes:(NSNumber *)votes rating:(NSNumber *)rating;
+
+@end
+
+@interface DHKMovie (JSONConvertable)
+
+-(instancetype) initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END
